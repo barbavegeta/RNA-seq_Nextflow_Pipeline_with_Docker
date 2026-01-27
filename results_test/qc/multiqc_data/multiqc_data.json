@@ -2,30 +2,30 @@
     "report_data_sources": {
         "STAR": {
             "SummaryLog": {
-                "KO_REP2": "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/KO_REP2.Log.final.out",
-                "WT_REP2": "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/WT_REP2.Log.final.out",
-                "KO_REP1": "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/KO_REP1.Log.final.out",
-                "WT_REP1": "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/WT_REP1.Log.final.out"
+                "KO_REP2": "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/KO_REP2.Log.final.out",
+                "WT_REP2": "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/WT_REP2.Log.final.out",
+                "WT_REP1": "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/WT_REP1.Log.final.out",
+                "KO_REP1": "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/KO_REP1.Log.final.out"
             }
         },
         "Cutadapt": {
             "all_sections": {
-                "SRR6357072": "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/KO_REP1.cutadapt.log",
-                "SRR6357071": "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/WT_REP2.cutadapt.log",
-                "SRR6357074": "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/KO_REP2.cutadapt.log",
-                "SRR6357070": "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/WT_REP1.cutadapt.log"
+                "SRR6357071": "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/WT_REP2.cutadapt.log",
+                "SRR6357072": "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/KO_REP1.cutadapt.log",
+                "SRR6357070": "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/WT_REP1.cutadapt.log",
+                "SRR6357074": "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/KO_REP2.cutadapt.log"
             }
         },
         "FastQC": {
             "all_sections": {
-                "SRR6357074_1": "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/SRR6357074_1_fastqc.zip",
-                "SRR6357074_2": "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/SRR6357074_2_fastqc.zip",
-                "SRR6357072_1": "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/SRR6357072_1_fastqc.zip",
-                "SRR6357072_2": "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/SRR6357072_2_fastqc.zip",
-                "SRR6357070_1": "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/SRR6357070_1_fastqc.zip",
-                "SRR6357070_2": "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/SRR6357070_2_fastqc.zip",
-                "SRR6357071_1": "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/SRR6357071_1_fastqc.zip",
-                "SRR6357071_2": "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/SRR6357071_2_fastqc.zip"
+                "SRR6357071_1": "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/SRR6357071_1_fastqc.zip",
+                "SRR6357071_2": "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/SRR6357071_2_fastqc.zip",
+                "SRR6357072_1": "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/SRR6357072_1_fastqc.zip",
+                "SRR6357072_2": "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/SRR6357072_2_fastqc.zip",
+                "SRR6357070_1": "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/SRR6357070_1_fastqc.zip",
+                "SRR6357070_2": "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/SRR6357070_2_fastqc.zip",
+                "SRR6357074_1": "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/SRR6357074_1_fastqc.zip",
+                "SRR6357074_2": "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/SRR6357074_2_fastqc.zip"
             }
         }
     },
@@ -87,34 +87,6 @@
                 "unmapped_tooshort": 1007,
                 "unmapped_other": 44484
             },
-            "KO_REP1": {
-                "total_reads": 49760.0,
-                "avg_input_read_length": 201.0,
-                "uniquely_mapped": 41756.0,
-                "uniquely_mapped_percent": 83.91,
-                "avg_mapped_read_length": 199.12,
-                "num_splices": 658.0,
-                "num_annotated_splices": 385.0,
-                "num_GTAG_splices": 539.0,
-                "num_GCAG_splices": 3.0,
-                "num_ATAC_splices": 5.0,
-                "num_noncanonical_splices": 111.0,
-                "mismatch_rate": 0.85,
-                "deletion_rate": 0.02,
-                "deletion_length": 1.16,
-                "insertion_rate": 0.0,
-                "insertion_length": 1.14,
-                "multimapped": 950.0,
-                "multimapped_percent": 1.91,
-                "multimapped_toomany": 4.0,
-                "multimapped_toomany_percent": 0.01,
-                "unmapped_mismatches_percent": 0.0,
-                "unmapped_tooshort_percent": 7.2,
-                "unmapped_other_percent": 6.96,
-                "unmapped_mismatches": 0,
-                "unmapped_tooshort": 3585,
-                "unmapped_other": 3465
-            },
             "WT_REP1": {
                 "total_reads": 49749.0,
                 "avg_input_read_length": 201.0,
@@ -142,19 +114,37 @@
                 "unmapped_mismatches": 0,
                 "unmapped_tooshort": 3879,
                 "unmapped_other": 3923
+            },
+            "KO_REP1": {
+                "total_reads": 49760.0,
+                "avg_input_read_length": 201.0,
+                "uniquely_mapped": 41756.0,
+                "uniquely_mapped_percent": 83.91,
+                "avg_mapped_read_length": 199.12,
+                "num_splices": 658.0,
+                "num_annotated_splices": 385.0,
+                "num_GTAG_splices": 539.0,
+                "num_GCAG_splices": 3.0,
+                "num_ATAC_splices": 5.0,
+                "num_noncanonical_splices": 111.0,
+                "mismatch_rate": 0.85,
+                "deletion_rate": 0.02,
+                "deletion_length": 1.16,
+                "insertion_rate": 0.0,
+                "insertion_length": 1.14,
+                "multimapped": 950.0,
+                "multimapped_percent": 1.91,
+                "multimapped_toomany": 4.0,
+                "multimapped_toomany_percent": 0.01,
+                "unmapped_mismatches_percent": 0.0,
+                "unmapped_tooshort_percent": 7.2,
+                "unmapped_other_percent": 6.96,
+                "unmapped_mismatches": 0,
+                "unmapped_tooshort": 3585,
+                "unmapped_other": 3465
             }
         },
         {
-            "SRR6357072": {
-                "cutadapt_version": "4.6",
-                "pairs_processed": 50000,
-                "pairs_too_short": 240,
-                "pairs_written": 49760,
-                "bp_processed": 10100000,
-                "quality_trimmed": 42183,
-                "bp_written": 10033059,
-                "percent_trimmed": 0.6627821782178218
-            },
             "SRR6357071": {
                 "cutadapt_version": "4.6",
                 "pairs_processed": 50000,
@@ -165,15 +155,15 @@
                 "bp_written": 9984931,
                 "percent_trimmed": 1.1392970297029703
             },
-            "SRR6357074": {
+            "SRR6357072": {
                 "cutadapt_version": "4.6",
                 "pairs_processed": 50000,
-                "pairs_too_short": 348,
-                "pairs_written": 49652,
+                "pairs_too_short": 240,
+                "pairs_written": 49760,
                 "bp_processed": 10100000,
-                "quality_trimmed": 68134,
-                "bp_written": 9997846,
-                "percent_trimmed": 1.0114257425742574
+                "quality_trimmed": 42183,
+                "bp_written": 10033059,
+                "percent_trimmed": 0.6627821782178218
             },
             "SRR6357070": {
                 "cutadapt_version": "4.6",
@@ -184,23 +174,33 @@
                 "quality_trimmed": 47881,
                 "bp_written": 10026458,
                 "percent_trimmed": 0.7281386138613861
+            },
+            "SRR6357074": {
+                "cutadapt_version": "4.6",
+                "pairs_processed": 50000,
+                "pairs_too_short": 348,
+                "pairs_written": 49652,
+                "bp_processed": 10100000,
+                "quality_trimmed": 68134,
+                "bp_written": 9997846,
+                "percent_trimmed": 1.0114257425742574
             }
         },
         {
-            "SRR6357074_1": {
+            "SRR6357071_1": {
                 "percent_gc": 41.0,
                 "avg_sequence_length": 101.0,
                 "median_sequence_length": 101,
                 "total_sequences": 50000.0,
-                "percent_duplicates": 14.209999999999994,
+                "percent_duplicates": 16.40599999999999,
                 "percent_fails": 10.0
             },
-            "SRR6357074_2": {
+            "SRR6357071_2": {
                 "percent_gc": 41.0,
                 "avg_sequence_length": 101.0,
                 "median_sequence_length": 101,
                 "total_sequences": 50000.0,
-                "percent_duplicates": 13.366,
+                "percent_duplicates": 15.64,
                 "percent_fails": 10.0
             },
             "SRR6357072_1": {
@@ -235,20 +235,20 @@
                 "percent_duplicates": 66.822,
                 "percent_fails": 20.0
             },
-            "SRR6357071_1": {
+            "SRR6357074_1": {
                 "percent_gc": 41.0,
                 "avg_sequence_length": 101.0,
                 "median_sequence_length": 101,
                 "total_sequences": 50000.0,
-                "percent_duplicates": 16.40599999999999,
+                "percent_duplicates": 14.209999999999994,
                 "percent_fails": 10.0
             },
-            "SRR6357071_2": {
+            "SRR6357074_2": {
                 "percent_gc": 41.0,
                 "avg_sequence_length": 101.0,
                 "median_sequence_length": 101,
                 "total_sequences": 50000.0,
-                "percent_duplicates": 15.64,
+                "percent_duplicates": 13.366,
                 "percent_fails": 10.0
             }
         }
@@ -450,7 +450,7 @@
             }
         }
     ],
-    "report_multiqc_command": "/opt/conda/bin/multiqc -o . KO_REP1.cutadapt.log WT_REP2.cutadapt.log KO_REP2.cutadapt.log SRR6357074_1_fastqc.zip SRR6357074_2_fastqc.zip SRR6357074_1_fastqc.html SRR6357074_2_fastqc.html WT_REP1.cutadapt.log SRR6357072_1_fastqc.zip SRR6357072_2_fastqc.zip SRR6357072_1_fastqc.html SRR6357072_2_fastqc.html SRR6357070_1_fastqc.zip SRR6357070_2_fastqc.zip SRR6357070_1_fastqc.html SRR6357070_2_fastqc.html SRR6357071_1_fastqc.zip SRR6357071_2_fastqc.zip SRR6357071_1_fastqc.html SRR6357071_2_fastqc.html KO_REP2.Log.final.out WT_REP2.Log.final.out KO_REP1.Log.final.out WT_REP1.Log.final.out featureCounts.log",
+    "report_multiqc_command": "/opt/conda/bin/multiqc -o . WT_REP2.cutadapt.log KO_REP1.cutadapt.log WT_REP1.cutadapt.log KO_REP2.cutadapt.log SRR6357071_1_fastqc.zip SRR6357071_2_fastqc.zip SRR6357071_1_fastqc.html SRR6357071_2_fastqc.html SRR6357072_1_fastqc.zip SRR6357072_2_fastqc.zip SRR6357072_1_fastqc.html SRR6357072_2_fastqc.html SRR6357070_1_fastqc.zip SRR6357070_2_fastqc.zip SRR6357070_1_fastqc.html SRR6357070_2_fastqc.html SRR6357074_1_fastqc.zip SRR6357074_2_fastqc.zip SRR6357074_1_fastqc.html SRR6357074_2_fastqc.html KO_REP2.Log.final.out WT_REP2.Log.final.out WT_REP1.Log.final.out KO_REP1.Log.final.out featureCounts.log",
     "report_plot_data": {
         "star_alignment_plot": {
             "id": "star_alignment_plot",
@@ -3122,14 +3122,14 @@
                 "xDecimals": false,
                 "tt_label": "<b>Base {point.x}</b>: {point.y:.2f}",
                 "colors": {
-                    "SRR6357074_1": "#5cb85c",
-                    "SRR6357074_2": "#5cb85c",
+                    "SRR6357071_1": "#5cb85c",
+                    "SRR6357071_2": "#5cb85c",
                     "SRR6357072_1": "#5cb85c",
                     "SRR6357072_2": "#5cb85c",
                     "SRR6357070_1": "#5cb85c",
                     "SRR6357070_2": "#5cb85c",
-                    "SRR6357071_1": "#5cb85c",
-                    "SRR6357071_2": "#5cb85c"
+                    "SRR6357074_1": "#5cb85c",
+                    "SRR6357074_2": "#5cb85c"
                 },
                 "yPlotBands": [
                     {
@@ -4315,14 +4315,14 @@
                 "xmin": 0,
                 "xDecimals": false,
                 "colors": {
-                    "SRR6357074_1": "#5cb85c",
-                    "SRR6357074_2": "#5cb85c",
+                    "SRR6357071_1": "#5cb85c",
+                    "SRR6357071_2": "#5cb85c",
                     "SRR6357072_1": "#5cb85c",
                     "SRR6357072_2": "#5cb85c",
                     "SRR6357070_1": "#5cb85c",
                     "SRR6357070_2": "#5cb85c",
-                    "SRR6357071_1": "#5cb85c",
-                    "SRR6357071_2": "#5cb85c"
+                    "SRR6357074_1": "#5cb85c",
+                    "SRR6357074_2": "#5cb85c"
                 },
                 "tt_label": "<b>Phred {point.x}</b>: {point.y} reads",
                 "xPlotBands": [
@@ -11142,14 +11142,14 @@
                 "yDecimals": false,
                 "tt_label": "<b>{point.x}% GC</b>: {point.y}",
                 "colors": {
-                    "SRR6357074_1": "#f0ad4e",
-                    "SRR6357074_2": "#f0ad4e",
+                    "SRR6357071_1": "#f0ad4e",
+                    "SRR6357071_2": "#f0ad4e",
                     "SRR6357072_1": "#f0ad4e",
                     "SRR6357072_2": "#f0ad4e",
                     "SRR6357070_1": "#f0ad4e",
                     "SRR6357070_2": "#5cb85c",
-                    "SRR6357071_1": "#f0ad4e",
-                    "SRR6357071_2": "#f0ad4e"
+                    "SRR6357074_1": "#f0ad4e",
+                    "SRR6357074_2": "#f0ad4e"
                 },
                 "data_labels": [
                     {
@@ -13182,14 +13182,14 @@
                 "xmin": 0,
                 "xDecimals": false,
                 "colors": {
-                    "SRR6357074_1": "#5cb85c",
-                    "SRR6357074_2": "#5cb85c",
+                    "SRR6357071_1": "#5cb85c",
+                    "SRR6357071_2": "#5cb85c",
                     "SRR6357072_1": "#5cb85c",
                     "SRR6357072_2": "#5cb85c",
                     "SRR6357070_1": "#5cb85c",
                     "SRR6357070_2": "#5cb85c",
-                    "SRR6357071_1": "#5cb85c",
-                    "SRR6357071_2": "#5cb85c"
+                    "SRR6357074_1": "#5cb85c",
+                    "SRR6357074_2": "#5cb85c"
                 },
                 "tt_label": "<b>Base {point.x}</b>: {point.y:.2f}%",
                 "yPlotBands": [
@@ -13564,14 +13564,14 @@
                 "ymax": 100,
                 "ymin": 0,
                 "colors": {
-                    "SRR6357074_1": "#5cb85c",
-                    "SRR6357074_2": "#5cb85c",
+                    "SRR6357071_1": "#5cb85c",
+                    "SRR6357071_2": "#5cb85c",
                     "SRR6357072_1": "#d9534f",
                     "SRR6357072_2": "#d9534f",
                     "SRR6357070_1": "#d9534f",
                     "SRR6357070_2": "#d9534f",
-                    "SRR6357071_1": "#5cb85c",
-                    "SRR6357071_2": "#5cb85c"
+                    "SRR6357074_1": "#5cb85c",
+                    "SRR6357074_2": "#5cb85c"
                 },
                 "tt_decimals": 2,
                 "tt_suffix": "%",
@@ -17347,80 +17347,80 @@
                         "mqc-generalstats-star-uniquely_mapped_percent": {
                             "KO_REP2": 5.6,
                             "WT_REP2": 8.06,
-                            "KO_REP1": 83.91,
-                            "WT_REP1": 82.35
+                            "WT_REP1": 82.35,
+                            "KO_REP1": 83.91
                         },
                         "mqc-generalstats-star-uniquely_mapped": {
                             "KO_REP2": 0.00278,
                             "WT_REP2": 0.003998,
-                            "KO_REP1": 0.041756,
-                            "WT_REP1": 0.040968
+                            "WT_REP1": 0.040968,
+                            "KO_REP1": 0.041756
                         },
                         "mqc-generalstats-cutadapt-percent_trimmed": {
-                            "SRR6357072": 0.6627821782178218,
                             "SRR6357071": 1.1392970297029703,
-                            "SRR6357074": 1.0114257425742574,
-                            "SRR6357070": 0.7281386138613861
+                            "SRR6357072": 0.6627821782178218,
+                            "SRR6357070": 0.7281386138613861,
+                            "SRR6357074": 1.0114257425742574
                         },
                         "mqc-generalstats-fastqc-percent_duplicates": {
-                            "SRR6357074_1": 14.209999999999994,
-                            "SRR6357074_2": 13.366,
+                            "SRR6357071_1": 16.40599999999999,
+                            "SRR6357071_2": 15.64,
                             "SRR6357072_1": 67.856,
                             "SRR6357072_2": 66.176,
                             "SRR6357070_1": 68.414,
                             "SRR6357070_2": 66.822,
-                            "SRR6357071_1": 16.40599999999999,
-                            "SRR6357071_2": 15.64
+                            "SRR6357074_1": 14.209999999999994,
+                            "SRR6357074_2": 13.366
                         },
                         "mqc-generalstats-fastqc-percent_gc": {
-                            "SRR6357074_1": 41.0,
-                            "SRR6357074_2": 41.0,
+                            "SRR6357071_1": 41.0,
+                            "SRR6357071_2": 41.0,
                             "SRR6357072_1": 40.0,
                             "SRR6357072_2": 40.0,
                             "SRR6357070_1": 40.0,
                             "SRR6357070_2": 40.0,
-                            "SRR6357071_1": 41.0,
-                            "SRR6357071_2": 41.0
+                            "SRR6357074_1": 41.0,
+                            "SRR6357074_2": 41.0
                         },
                         "mqc-generalstats-fastqc-avg_sequence_length": {
-                            "SRR6357074_1": 101.0,
-                            "SRR6357074_2": 101.0,
+                            "SRR6357071_1": 101.0,
+                            "SRR6357071_2": 101.0,
                             "SRR6357072_1": 101.0,
                             "SRR6357072_2": 101.0,
                             "SRR6357070_1": 101.0,
                             "SRR6357070_2": 101.0,
-                            "SRR6357071_1": 101.0,
-                            "SRR6357071_2": 101.0
+                            "SRR6357074_1": 101.0,
+                            "SRR6357074_2": 101.0
                         },
                         "mqc-generalstats-fastqc-median_sequence_length": {
-                            "SRR6357074_1": 101,
-                            "SRR6357074_2": 101,
+                            "SRR6357071_1": 101,
+                            "SRR6357071_2": 101,
                             "SRR6357072_1": 101,
                             "SRR6357072_2": 101,
                             "SRR6357070_1": 101,
                             "SRR6357070_2": 101,
-                            "SRR6357071_1": 101,
-                            "SRR6357071_2": 101
+                            "SRR6357074_1": 101,
+                            "SRR6357074_2": 101
                         },
                         "mqc-generalstats-fastqc-percent_fails": {
-                            "SRR6357074_1": 10.0,
-                            "SRR6357074_2": 10.0,
+                            "SRR6357071_1": 10.0,
+                            "SRR6357071_2": 10.0,
                             "SRR6357072_1": 20.0,
                             "SRR6357072_2": 20.0,
                             "SRR6357070_1": 20.0,
                             "SRR6357070_2": 20.0,
-                            "SRR6357071_1": 10.0,
-                            "SRR6357071_2": 10.0
+                            "SRR6357074_1": 10.0,
+                            "SRR6357074_2": 10.0
                         },
                         "mqc-generalstats-fastqc-total_sequences": {
-                            "SRR6357074_1": 0.049999999999999996,
-                            "SRR6357074_2": 0.049999999999999996,
+                            "SRR6357071_1": 0.049999999999999996,
+                            "SRR6357071_2": 0.049999999999999996,
                             "SRR6357072_1": 0.049999999999999996,
                             "SRR6357072_2": 0.049999999999999996,
                             "SRR6357070_1": 0.049999999999999996,
                             "SRR6357070_2": 0.049999999999999996,
-                            "SRR6357071_1": 0.049999999999999996,
-                            "SRR6357071_2": 0.049999999999999996
+                            "SRR6357074_1": 0.049999999999999996,
+                            "SRR6357074_2": 0.049999999999999996
                         }
                     },
                     "scatter_values_by_sample_by_metric": {
@@ -17543,34 +17543,6 @@
                 "unmapped_tooshort": 1007,
                 "unmapped_other": 44484
             },
-            "KO_REP1": {
-                "total_reads": 49760.0,
-                "avg_input_read_length": 201.0,
-                "uniquely_mapped": 41756.0,
-                "uniquely_mapped_percent": 83.91,
-                "avg_mapped_read_length": 199.12,
-                "num_splices": 658.0,
-                "num_annotated_splices": 385.0,
-                "num_GTAG_splices": 539.0,
-                "num_GCAG_splices": 3.0,
-                "num_ATAC_splices": 5.0,
-                "num_noncanonical_splices": 111.0,
-                "mismatch_rate": 0.85,
-                "deletion_rate": 0.02,
-                "deletion_length": 1.16,
-                "insertion_rate": 0.0,
-                "insertion_length": 1.14,
-                "multimapped": 950.0,
-                "multimapped_percent": 1.91,
-                "multimapped_toomany": 4.0,
-                "multimapped_toomany_percent": 0.01,
-                "unmapped_mismatches_percent": 0.0,
-                "unmapped_tooshort_percent": 7.2,
-                "unmapped_other_percent": 6.96,
-                "unmapped_mismatches": 0,
-                "unmapped_tooshort": 3585,
-                "unmapped_other": 3465
-            },
             "WT_REP1": {
                 "total_reads": 49749.0,
                 "avg_input_read_length": 201.0,
@@ -17598,19 +17570,37 @@
                 "unmapped_mismatches": 0,
                 "unmapped_tooshort": 3879,
                 "unmapped_other": 3923
+            },
+            "KO_REP1": {
+                "total_reads": 49760.0,
+                "avg_input_read_length": 201.0,
+                "uniquely_mapped": 41756.0,
+                "uniquely_mapped_percent": 83.91,
+                "avg_mapped_read_length": 199.12,
+                "num_splices": 658.0,
+                "num_annotated_splices": 385.0,
+                "num_GTAG_splices": 539.0,
+                "num_GCAG_splices": 3.0,
+                "num_ATAC_splices": 5.0,
+                "num_noncanonical_splices": 111.0,
+                "mismatch_rate": 0.85,
+                "deletion_rate": 0.02,
+                "deletion_length": 1.16,
+                "insertion_rate": 0.0,
+                "insertion_length": 1.14,
+                "multimapped": 950.0,
+                "multimapped_percent": 1.91,
+                "multimapped_toomany": 4.0,
+                "multimapped_toomany_percent": 0.01,
+                "unmapped_mismatches_percent": 0.0,
+                "unmapped_tooshort_percent": 7.2,
+                "unmapped_other_percent": 6.96,
+                "unmapped_mismatches": 0,
+                "unmapped_tooshort": 3585,
+                "unmapped_other": 3465
             }
         },
         "multiqc_cutadapt": {
-            "SRR6357072": {
-                "cutadapt_version": "4.6",
-                "pairs_processed": 50000,
-                "pairs_too_short": 240,
-                "pairs_written": 49760,
-                "bp_processed": 10100000,
-                "quality_trimmed": 42183,
-                "bp_written": 10033059,
-                "percent_trimmed": 0.6627821782178218
-            },
             "SRR6357071": {
                 "cutadapt_version": "4.6",
                 "pairs_processed": 50000,
@@ -17621,15 +17611,15 @@
                 "bp_written": 9984931,
                 "percent_trimmed": 1.1392970297029703
             },
-            "SRR6357074": {
+            "SRR6357072": {
                 "cutadapt_version": "4.6",
                 "pairs_processed": 50000,
-                "pairs_too_short": 348,
-                "pairs_written": 49652,
+                "pairs_too_short": 240,
+                "pairs_written": 49760,
                 "bp_processed": 10100000,
-                "quality_trimmed": 68134,
-                "bp_written": 9997846,
-                "percent_trimmed": 1.0114257425742574
+                "quality_trimmed": 42183,
+                "bp_written": 10033059,
+                "percent_trimmed": 0.6627821782178218
             },
             "SRR6357070": {
                 "cutadapt_version": "4.6",
@@ -17640,11 +17630,21 @@
                 "quality_trimmed": 47881,
                 "bp_written": 10026458,
                 "percent_trimmed": 0.7281386138613861
+            },
+            "SRR6357074": {
+                "cutadapt_version": "4.6",
+                "pairs_processed": 50000,
+                "pairs_too_short": 348,
+                "pairs_written": 49652,
+                "bp_processed": 10100000,
+                "quality_trimmed": 68134,
+                "bp_written": 9997846,
+                "percent_trimmed": 1.0114257425742574
             }
         },
         "multiqc_fastqc": {
-            "SRR6357074_1": {
-                "Filename": "SRR6357074_1.fastq.gz",
+            "SRR6357071_1": {
+                "Filename": "SRR6357071_1.fastq.gz",
                 "File type": "Conventional base calls",
                 "Encoding": "Sanger / Illumina 1.9",
                 "Total Sequences": 50000.0,
@@ -17652,7 +17652,7 @@
                 "Sequences flagged as poor quality": 0.0,
                 "Sequence length": 101.0,
                 "%GC": 41.0,
-                "total_deduplicated_percentage": 85.79,
+                "total_deduplicated_percentage": 83.59400000000001,
                 "avg_sequence_length": 101.0,
                 "median_sequence_length": 101,
                 "basic_statistics": "pass",
@@ -17663,11 +17663,11 @@
                 "per_base_n_content": "pass",
                 "sequence_length_distribution": "pass",
                 "sequence_duplication_levels": "pass",
-                "overrepresented_sequences": "pass",
+                "overrepresented_sequences": "warn",
                 "adapter_content": "pass"
             },
-            "SRR6357074_2": {
-                "Filename": "SRR6357074_2.fastq.gz",
+            "SRR6357071_2": {
+                "Filename": "SRR6357071_2.fastq.gz",
                 "File type": "Conventional base calls",
                 "Encoding": "Sanger / Illumina 1.9",
                 "Total Sequences": 50000.0,
@@ -17675,7 +17675,7 @@
                 "Sequences flagged as poor quality": 0.0,
                 "Sequence length": 101.0,
                 "%GC": 41.0,
-                "total_deduplicated_percentage": 86.634,
+                "total_deduplicated_percentage": 84.36,
                 "avg_sequence_length": 101.0,
                 "median_sequence_length": 101,
                 "basic_statistics": "pass",
@@ -17781,8 +17781,8 @@
                 "overrepresented_sequences": "warn",
                 "adapter_content": "pass"
             },
-            "SRR6357071_1": {
-                "Filename": "SRR6357071_1.fastq.gz",
+            "SRR6357074_1": {
+                "Filename": "SRR6357074_1.fastq.gz",
                 "File type": "Conventional base calls",
                 "Encoding": "Sanger / Illumina 1.9",
                 "Total Sequences": 50000.0,
@@ -17790,7 +17790,7 @@
                 "Sequences flagged as poor quality": 0.0,
                 "Sequence length": 101.0,
                 "%GC": 41.0,
-                "total_deduplicated_percentage": 83.59400000000001,
+                "total_deduplicated_percentage": 85.79,
                 "avg_sequence_length": 101.0,
                 "median_sequence_length": 101,
                 "basic_statistics": "pass",
@@ -17801,11 +17801,11 @@
                 "per_base_n_content": "pass",
                 "sequence_length_distribution": "pass",
                 "sequence_duplication_levels": "pass",
-                "overrepresented_sequences": "warn",
+                "overrepresented_sequences": "pass",
                 "adapter_content": "pass"
             },
-            "SRR6357071_2": {
-                "Filename": "SRR6357071_2.fastq.gz",
+            "SRR6357074_2": {
+                "Filename": "SRR6357074_2.fastq.gz",
                 "File type": "Conventional base calls",
                 "Encoding": "Sanger / Illumina 1.9",
                 "Total Sequences": 50000.0,
@@ -17813,7 +17813,7 @@
                 "Sequences flagged as poor quality": 0.0,
                 "Sequence length": 101.0,
                 "%GC": 41.0,
-                "total_deduplicated_percentage": 84.36,
+                "total_deduplicated_percentage": 86.634,
                 "avg_sequence_length": 101.0,
                 "median_sequence_length": 101,
                 "basic_statistics": "pass",
@@ -17837,36 +17837,36 @@
                 "STAR_mqc-generalstats-star-uniquely_mapped_percent": 8.06,
                 "STAR_mqc-generalstats-star-uniquely_mapped": 3998.0
             },
-            "KO_REP1": {
-                "STAR_mqc-generalstats-star-uniquely_mapped_percent": 83.91,
-                "STAR_mqc-generalstats-star-uniquely_mapped": 41756.0
-            },
             "WT_REP1": {
                 "STAR_mqc-generalstats-star-uniquely_mapped_percent": 82.35,
                 "STAR_mqc-generalstats-star-uniquely_mapped": 40968.0
             },
-            "SRR6357072": {
-                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 0.6627821782178218
+            "KO_REP1": {
+                "STAR_mqc-generalstats-star-uniquely_mapped_percent": 83.91,
+                "STAR_mqc-generalstats-star-uniquely_mapped": 41756.0
             },
             "SRR6357071": {
                 "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 1.1392970297029703
             },
-            "SRR6357074": {
-                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 1.0114257425742574
+            "SRR6357072": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 0.6627821782178218
             },
             "SRR6357070": {
                 "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 0.7281386138613861
             },
-            "SRR6357074_1": {
-                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 14.209999999999994,
+            "SRR6357074": {
+                "Cutadapt_mqc-generalstats-cutadapt-percent_trimmed": 1.0114257425742574
+            },
+            "SRR6357071_1": {
+                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 16.40599999999999,
                 "FastQC_mqc-generalstats-fastqc-percent_gc": 41.0,
                 "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 101.0,
                 "FastQC_mqc-generalstats-fastqc-median_sequence_length": 101,
                 "FastQC_mqc-generalstats-fastqc-percent_fails": 10.0,
                 "FastQC_mqc-generalstats-fastqc-total_sequences": 50000.0
             },
-            "SRR6357074_2": {
-                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 13.366,
+            "SRR6357071_2": {
+                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 15.64,
                 "FastQC_mqc-generalstats-fastqc-percent_gc": 41.0,
                 "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 101.0,
                 "FastQC_mqc-generalstats-fastqc-median_sequence_length": 101,
@@ -17905,16 +17905,16 @@
                 "FastQC_mqc-generalstats-fastqc-percent_fails": 20.0,
                 "FastQC_mqc-generalstats-fastqc-total_sequences": 50000.0
             },
-            "SRR6357071_1": {
-                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 16.40599999999999,
+            "SRR6357074_1": {
+                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 14.209999999999994,
                 "FastQC_mqc-generalstats-fastqc-percent_gc": 41.0,
                 "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 101.0,
                 "FastQC_mqc-generalstats-fastqc-median_sequence_length": 101,
                 "FastQC_mqc-generalstats-fastqc-percent_fails": 10.0,
                 "FastQC_mqc-generalstats-fastqc-total_sequences": 50000.0
             },
-            "SRR6357071_2": {
-                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 15.64,
+            "SRR6357074_2": {
+                "FastQC_mqc-generalstats-fastqc-percent_duplicates": 13.366,
                 "FastQC_mqc-generalstats-fastqc-percent_gc": 41.0,
                 "FastQC_mqc-generalstats-fastqc-avg_sequence_length": 101.0,
                 "FastQC_mqc-generalstats-fastqc-median_sequence_length": 101,
@@ -17924,41 +17924,41 @@
         }
     },
     "config_analysis_dir_abs": [
-        "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/KO_REP1.cutadapt.log",
-        "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/WT_REP2.cutadapt.log",
-        "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/KO_REP2.cutadapt.log",
-        "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/SRR6357074_1_fastqc.zip",
-        "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/SRR6357074_2_fastqc.zip",
-        "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/SRR6357074_1_fastqc.html",
-        "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/SRR6357074_2_fastqc.html",
-        "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/WT_REP1.cutadapt.log",
-        "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/SRR6357072_1_fastqc.zip",
-        "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/SRR6357072_2_fastqc.zip",
-        "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/SRR6357072_1_fastqc.html",
-        "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/SRR6357072_2_fastqc.html",
-        "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/SRR6357070_1_fastqc.zip",
-        "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/SRR6357070_2_fastqc.zip",
-        "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/SRR6357070_1_fastqc.html",
-        "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/SRR6357070_2_fastqc.html",
-        "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/SRR6357071_1_fastqc.zip",
-        "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/SRR6357071_2_fastqc.zip",
-        "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/SRR6357071_1_fastqc.html",
-        "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/SRR6357071_2_fastqc.html",
-        "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/KO_REP2.Log.final.out",
-        "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/WT_REP2.Log.final.out",
-        "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/KO_REP1.Log.final.out",
-        "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/WT_REP1.Log.final.out",
-        "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd/featureCounts.log"
+        "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/WT_REP2.cutadapt.log",
+        "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/KO_REP1.cutadapt.log",
+        "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/WT_REP1.cutadapt.log",
+        "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/KO_REP2.cutadapt.log",
+        "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/SRR6357071_1_fastqc.zip",
+        "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/SRR6357071_2_fastqc.zip",
+        "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/SRR6357071_1_fastqc.html",
+        "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/SRR6357071_2_fastqc.html",
+        "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/SRR6357072_1_fastqc.zip",
+        "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/SRR6357072_2_fastqc.zip",
+        "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/SRR6357072_1_fastqc.html",
+        "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/SRR6357072_2_fastqc.html",
+        "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/SRR6357070_1_fastqc.zip",
+        "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/SRR6357070_2_fastqc.zip",
+        "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/SRR6357070_1_fastqc.html",
+        "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/SRR6357070_2_fastqc.html",
+        "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/SRR6357074_1_fastqc.zip",
+        "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/SRR6357074_2_fastqc.zip",
+        "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/SRR6357074_1_fastqc.html",
+        "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/SRR6357074_2_fastqc.html",
+        "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/KO_REP2.Log.final.out",
+        "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/WT_REP2.Log.final.out",
+        "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/WT_REP1.Log.final.out",
+        "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/KO_REP1.Log.final.out",
+        "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6/featureCounts.log"
     ],
     "config_analysis_dir": [
-        "KO_REP1.cutadapt.log",
         "WT_REP2.cutadapt.log",
-        "KO_REP2.cutadapt.log",
-        "SRR6357074_1_fastqc.zip",
-        "SRR6357074_2_fastqc.zip",
-        "SRR6357074_1_fastqc.html",
-        "SRR6357074_2_fastqc.html",
+        "KO_REP1.cutadapt.log",
         "WT_REP1.cutadapt.log",
+        "KO_REP2.cutadapt.log",
+        "SRR6357071_1_fastqc.zip",
+        "SRR6357071_2_fastqc.zip",
+        "SRR6357071_1_fastqc.html",
+        "SRR6357071_2_fastqc.html",
         "SRR6357072_1_fastqc.zip",
         "SRR6357072_2_fastqc.zip",
         "SRR6357072_1_fastqc.html",
@@ -17967,17 +17967,17 @@
         "SRR6357070_2_fastqc.zip",
         "SRR6357070_1_fastqc.html",
         "SRR6357070_2_fastqc.html",
-        "SRR6357071_1_fastqc.zip",
-        "SRR6357071_2_fastqc.zip",
-        "SRR6357071_1_fastqc.html",
-        "SRR6357071_2_fastqc.html",
+        "SRR6357074_1_fastqc.zip",
+        "SRR6357074_2_fastqc.zip",
+        "SRR6357074_1_fastqc.html",
+        "SRR6357074_2_fastqc.html",
         "KO_REP2.Log.final.out",
         "WT_REP2.Log.final.out",
-        "KO_REP1.Log.final.out",
         "WT_REP1.Log.final.out",
+        "KO_REP1.Log.final.out",
         "featureCounts.log"
     ],
-    "config_creation_date": "2026-01-27, 18:25 UTC",
+    "config_creation_date": "2026-01-27, 19:38 UTC",
     "config_git_hash": null,
     "config_intro_text": null,
     "config_report_comment": null,
@@ -17987,5 +17987,5 @@
     "config_subtitle": null,
     "config_title": null,
     "config_version": "1.21",
-    "config_output_dir": "/home/barbavegeta/projects/rnaseq-nf/work/3d/8d06b8449c7c531d20ecfa31b7f0dd"
+    "config_output_dir": "/home/barbavegeta/projects/rnaseq-nf/work/eb/1829a7056e8310bb736b545a7f64e6"
 }

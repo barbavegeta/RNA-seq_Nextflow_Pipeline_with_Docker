@@ -9,13 +9,15 @@
 
 //========================== featureCounts setting ===========================\\
 ||                                                                            ||
-||             Input files : 2 BAM files                                      ||
+||             Input files : 4 BAM files                                      ||
 ||                                                                            ||
-||                           WT_REP2.sorted.bam                               ||
 ||                           WT_REP1.sorted.bam                               ||
+||                           KO_REP1.sorted.bam                               ||
+||                           WT_REP2.sorted.bam                               ||
+||                           KO_REP2.sorted.bam                               ||
 ||                                                                            ||
-||             Output file : raw_counts.txt                                   ||
-||                 Summary : raw_counts.txt.summary                           ||
+||             Output file : counts.raw.tsv                                   ||
+||                 Summary : counts.raw.tsv.summary                           ||
 ||              Paired-end : yes                                              ||
 ||        Count read pairs : no                                               ||
 ||              Annotation : genes.gtf (GTF)                                  ||
@@ -36,13 +38,6 @@
 ||    Meta-features : 124                                                     ||
 ||    Chromosomes/contigs : 1                                                 ||
 ||                                                                            ||
-|| Process BAM file WT_REP2.sorted.bam...                                     ||
-||    Paired-end reads are included.                                          ||
-||    The reads are assigned on the single-end mode.                          ||
-||    Total alignments : 88619                                                ||
-||    Successfully assigned alignments : 65708 (74.1%)                        ||
-||    Running time : 0.00 minutes                                             ||
-||                                                                            ||
 || Process BAM file WT_REP1.sorted.bam...                                     ||
 ||    Paired-end reads are included.                                          ||
 ||    The reads are assigned on the single-end mode.                          ||
@@ -50,10 +45,31 @@
 ||    Successfully assigned alignments : 65336 (75.0%)                        ||
 ||    Running time : 0.00 minutes                                             ||
 ||                                                                            ||
+|| Process BAM file KO_REP1.sorted.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 88619                                                ||
+||    Successfully assigned alignments : 65708 (74.1%)                        ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process BAM file WT_REP2.sorted.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 8516                                                 ||
+||    Successfully assigned alignments : 6427 (75.5%)                         ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
+|| Process BAM file KO_REP2.sorted.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    The reads are assigned on the single-end mode.                          ||
+||    Total alignments : 5886                                                 ||
+||    Successfully assigned alignments : 4368 (74.2%)                         ||
+||    Running time : 0.00 minutes                                             ||
+||                                                                            ||
 || Write the final count table.                                               ||
 || Write the read assignment summary.                                         ||
 ||                                                                            ||
-|| Summary of counting results can be found in file "raw_counts.txt.summary"  ||
+|| Summary of counting results can be found in file "counts.raw.tsv.summary"  ||
 ||                                                                            ||
 \\============================================================================//
 
