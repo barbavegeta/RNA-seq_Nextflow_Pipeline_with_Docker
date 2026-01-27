@@ -1,0 +1,15 @@
+Jan-27 11:51:56.981 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf --samplesheet tests/samplesheet.test.csv --genome_fasta tests/ref/genome.fasta --genome_gtf tests/ref/genes.gtf --outdir results_test --design tests/design.test.tsv
+Jan-27 11:51:57.112 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.10.3
+Jan-27 11:51:57.155 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/barbavegeta/.nextflow/plugins; core-plugins: nf-amazon@3.4.3,nf-azure@1.20.2,nf-cloudcache@0.5.0,nf-codecommit@0.5.0,nf-console@1.3.0,nf-google@1.23.4,nf-k8s@1.2.2,nf-tower@1.17.4,nf-wave@1.16.1
+Jan-27 11:51:57.205 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jan-27 11:51:57.207 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jan-27 11:51:57.213 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jan-27 11:51:57.249 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Jan-27 11:51:57.618 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jan-27 11:51:57.651 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /home/barbavegeta/.nextflow/scm
+Jan-27 11:51:57.682 [main] DEBUG nextflow.cli.Launcher - Operation aborted
+nextflow.exception.AbortOperationException: Cannot find script file: main.nf
+	at nextflow.cli.CmdRun.getScriptFile(CmdRun.groovy:578)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:329)
+	at nextflow.cli.Launcher.run(Launcher.groovy:515)
+	at nextflow.cli.Launcher.main(Launcher.groovy:675)

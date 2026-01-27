@@ -1,0 +1,5 @@
+sample,fastq_1,fastq_2
+WT_REP1,tests/data/SRR6357070_1.fastq.gz,tests/data/SRR6357070_2.fastq.gz
+WT_REP2,tests/data/SRR6357071_1.fastq.gz,tests/data/SRR6357071_2.fastq.gz
+KO_REP1,tests/data/SRR6357072_1.fastq.gz,tests/data/SRR6357072_2.fastq.gz
+KO_REP2,tests/data/SRR6357074_1.fastq.gz,tests/data/SRR6357074_2.fastq.gz

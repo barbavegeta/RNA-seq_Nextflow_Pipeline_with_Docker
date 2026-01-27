@@ -1,0 +1,12 @@
+name: rnaseq-tools
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - fastqc=0.12.1
+  - cutadapt=4.6
+  - star=2.7.11b
+  - samtools=1.20
+  - subread=2.0.6
+  - multiqc=1.21
+  - pigz=2.8
