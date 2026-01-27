@@ -25,7 +25,7 @@ docker build -t rnaseq-tools:0.1.0 containers/rnaseq-tools
 docker build -t rnaseq-r:0.1.0 containers/rnaseq-r
 
 # run the test
-nextflow run main.nf \
+nextflow run main.nf -profile docker \
   --samplesheet tests/samplesheet.test.csv \
   --genome_fasta tests/ref/genome.fasta \
   --genome_gtf tests/ref/genes.gtf \
@@ -33,7 +33,8 @@ nextflow run main.nf \
   --outdir results_test \
   -with-trace  "trace-$(date +%Y%m%d-%H%M%S).txt" \
   -with-report "report-$(date +%Y%m%d-%H%M%S).html" \
-  -with-timeline "timeline-$(date +%Y%m%d-%H%M%S).html"
+  -with-timeline "timeline-$(date +%Y%m%d-%H%M%S).html" \
+  -resume
 ```
 
 ### Note on report/timeline filenames
