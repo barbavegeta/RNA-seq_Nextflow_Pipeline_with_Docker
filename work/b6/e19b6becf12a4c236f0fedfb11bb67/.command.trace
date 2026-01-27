@@ -1,0 +1,17 @@
+nextflow.trace/v2
+realtime=664
+%cpu=1828
+cpu_model=AMD Ryzen 5 4600H with Radeon Graphics
+rchar=57429773
+wchar=55312975
+syscr=1357
+syscw=113
+read_bytes=6930432
+write_bytes=4358144
+%mem=1
+vmem=17744
+rss=13056
+peak_vmem=17892
+peak_rss=13056
+vol_ctxt=6
+inv_ctxt=3

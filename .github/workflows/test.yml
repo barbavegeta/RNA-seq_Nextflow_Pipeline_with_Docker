@@ -1,0 +1,62 @@
+name: rnaseq-nf test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Java (for Nextflow)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - name: Install Nextflow
+        run: |
+          curl -s https://get.nextflow.io | bash
+          sudo mv nextflow /usr/local/bin/
+          nextflow -version
+
+      - name: Cache Nextflow assets
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.nextflow
+          key: ${{ runner.os }}-nextflow-${{ hashFiles('nextflow.config', 'main.nf') }}
+
+      - name: Build pipeline containers (local tags)
+        run: |
+          docker build -t rnaseq-tools:0.1.0 containers/rnaseq-tools
+          docker build -t rnaseq-r:0.1.0 containers/rnaseq-r
+
+      - name: Run test pipeline
+        run: |
+          nextflow run main.nf -profile docker \
+            --samplesheet tests/samplesheet.test.csv \
+            --genome_fasta tests/ref/genome.fasta \
+            --genome_gtf tests/ref/genes.gtf \
+            --design tests/design.test.tsv \
+            --outdir results_test \
+            -with-report report.html \
+            -with-trace trace.txt \
+            -with-timeline timeline.html
+
+      - name: Upload outputs (debugging)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: results-and-reports
+          path: |
+            results_test
+            report.html
+            trace.txt
+            timeline.html
+            .nextflow.log
