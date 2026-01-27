@@ -1,4 +1,4 @@
-# RNA-seq Nextflow Pipeline (Docker)
+# RNA-seq Nextflow Pipeline with Docker
 
 Minimal end-to-end RNA-seq pipeline:
 **FASTQ -> FastQC -> cutadapt -> STAR -> sorted BAM -> featureCounts -> MultiQC → DESeq2**
