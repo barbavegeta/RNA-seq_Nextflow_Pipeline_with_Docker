@@ -41,6 +41,9 @@ nextflow run main.nf -profile docker \
 If you reuse the same `report.html` / `timeline.html`, Nextflow will refuse to overwrite them.  
 Using timestamped names (as above) avoids that.
 
+## Proof it runs (Docker profile)
+![Nextflow test run (Docker)](img/test-run-docker.png)
+
 ---
 
 ## Inputs
