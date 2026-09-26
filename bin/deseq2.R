@@ -10,6 +10,10 @@ suppressPackageStartupMessages({
 opt_list <- list(
   make_option("--counts", type="character"),
   make_option("--design", type="character"),
+  make_option("--formula", type="character", default="~ condition",
+              help="DESeq2 design formula; the tested variable must be 'condition' and come last"),
+  make_option("--reference", type="character", default=NULL,
+              help="reference level of 'condition' (default: first level alphabetically)"),
   make_option("--out_results", type="character"),
   make_option("--out_ma", type="character"),
   make_option("--out_pca", type="character")
@@ -29,10 +33,26 @@ stopifnot(all(design$sample %in% colnames(count_mat)))
 rownames(design) <- design$sample
 design <- design[colnames(count_mat), , drop=FALSE]
 
-dds <- DESeqDataSetFromMatrix(countData=count_mat, colData=design, design=~ condition)
+# every covariate becomes a factor; 'condition' gets an explicit reference level so the
+# sign of log2FoldChange is always (other level) vs (reference)
+for (v in setdiff(colnames(design), "sample")) design[[v]] <- factor(design[[v]])
+if (!is.null(opt$reference)) {
+  stopifnot(opt$reference %in% levels(design$condition))
+  design$condition <- relevel(design$condition, ref = opt$reference)
+}
+ref_level <- levels(design$condition)[1]
+message("DESeq2 design: ", opt$formula, " | condition reference level: ", ref_level)
+
+dds <- DESeqDataSetFromMatrix(countData=count_mat, colData=design, design=as.formula(opt$formula))
 dds <- DESeq(dds)
 
-res <- results(dds)
+if (nlevels(design$condition) == 2) {
+  test_level <- levels(design$condition)[2]
+  res <- results(dds, contrast = c("condition", test_level, ref_level))
+  message("Contrast: ", test_level, " vs ", ref_level)
+} else {
+  res <- results(dds)
+}
 res_dt <- as.data.table(res, keep.rownames="gene_id")
 fwrite(res_dt, opt$out_results, sep="\t")
 

@@ -50,7 +50,7 @@ process STAR_INDEX {
       --genomeDir star_index \
       --genomeFastaFiles ${fasta} \
       --sjdbGTFfile ${gtf} \
-      --sjdbOverhang 99
+      --sjdbOverhang ${params.sjdb_overhang} ${params.star_index_args}
     """
 }
 
@@ -117,7 +117,7 @@ process FEATURECOUNTS {
 
   featureCounts \
     -T !{task.cpus} \
-    -p -B -C \
+    -p -B -C !{params.count_read_pairs ? '--countReadPairs' : ''} \
     -a "$gtf" \
     -o counts.raw.tsv \
     -t exon \
@@ -138,6 +138,49 @@ process FEATURECOUNTS {
 }
 
 
+
+
+process SALMON_INDEX {
+  tag "salmon_index"
+  cpus params.threads
+  input:
+    path transcripts
+  output:
+    path "salmon_index"
+  script:
+    """
+    salmon index -t ${transcripts} -i salmon_index -p ${task.cpus}
+    """
+}
+
+process SALMON_QUANT {
+  tag "${sample}"
+  cpus params.threads
+  input:
+    path index_dir
+    tuple val(sample), path(r1), path(r2), val(condition), path(cutlog)
+  output:
+    tuple val(sample), path("${sample}")
+  script:
+    """
+    salmon quant -i ${index_dir} -l A -1 ${r1} -2 ${r2} \
+      -p ${task.cpus} --validateMappings -o ${sample}
+    """
+}
+
+process SALMON_GENE_COUNTS {
+  publishDir params.outdir, mode: 'copy'
+  input:
+    path transcripts
+    path quant_dirs
+    path counts_script
+  output:
+    path "counts.tsv", emit: counts
+  script:
+    """
+    python3 ${counts_script} --transcripts ${transcripts} --out counts.tsv ${quant_dirs}
+    """
+}
 
 process MULTIQC {
   tag "multiqc"
@@ -174,6 +217,8 @@ process DESEQ2 {
   Rscript "!{deseq_script}" \
     --counts "!{counts}" \
     --design "!{design}" \
+    --formula "!{params.deseq2_formula}" \
+    !{params.deseq2_reference ? "--reference " + params.deseq2_reference : ""} \
     --out_results deseq2_results.tsv \
     --out_ma deseq2_ma_plot.png \
     --out_pca deseq2_pca_plot.png
@@ -186,14 +231,15 @@ process DESEQ2 {
 workflow {
 
   if( !params.samplesheet )  error "Provide --samplesheet"
-  if( !params.genome_fasta ) error "Provide --genome_fasta"
+  if( !(params.aligner in ['star', 'salmon']) ) error "--aligner must be 'star' or 'salmon'"
   if( !params.genome_gtf )   error "Provide --genome_gtf"
+  if( params.aligner == 'star' && !params.genome_fasta )       error "Provide --genome_fasta"
+  if( params.aligner == 'salmon' && !params.transcript_fasta ) error "Provide --transcript_fasta"
 
   def samplesheet = file(params.samplesheet)
   if( !samplesheet.exists() ) error "Samplesheet not found: ${samplesheet}"
 
-  def fasta = file(params.genome_fasta)
-  def gtf   = file(params.genome_gtf)
+  def gtf = file(params.genome_gtf)
 
   def samples_ch = Channel
     .from(samplesheet)
@@ -208,31 +254,43 @@ workflow {
 
   def fq      = FASTQC(samples_ch)
   def trimmed = CUTADAPT(samples_ch)
-  def idx     = STAR_INDEX(fasta, gtf)
-  def aligned = STAR_ALIGN(idx, trimmed)
-  def bams    = SORT_INDEX_BAM(aligned)
 
-  // keep only sample + bam
-  def bam_pairs = bams.map { sample, bam, bai, condition -> tuple(sample, bam) }
+  def counts_ch
+  def aligner_qc
+  if( params.aligner == 'star' ) {
+    // genome alignment: STAR -> sorted BAM -> featureCounts
+    def fasta   = file(params.genome_fasta)
+    def idx     = STAR_INDEX(fasta, gtf)
+    def aligned = STAR_ALIGN(idx, trimmed)
+    def bams    = SORT_INDEX_BAM(aligned)
 
-  // bam_map.tsv will contain filenames that will exist in the FEATURECOUNTS task dir
-  def bam_map = bam_pairs
-    .map { sid, bam -> "${sid}\t${bam.getName()}" }
-    .collectFile(name: 'bam_map.tsv', newLine: true)
+    def bam_pairs = bams.map { sample, bam, bai, condition -> tuple(sample, bam) }
+    // bam_map.tsv lists the BAM file names as they will appear in the FEATURECOUNTS task dir
+    def bam_map = bam_pairs
+      .map { sid, bam -> "${sid}\t${bam.getName()}" }
+      .collectFile(name: 'bam_map.tsv', newLine: true)
+    def bam_files = bam_pairs.map { sid, bam -> bam }.collect()
 
-  // stage all BAMs into the FEATURECOUNTS task (portable across containers/executors)
-  def bam_files = bam_pairs.map { sid, bam -> bam }.collect()
-
-def fc = FEATURECOUNTS(gtf, bam_map, bam_files)
+    def fc = FEATURECOUNTS(gtf, bam_map, bam_files)
+    counts_ch  = fc.counts
+    aligner_qc = aligned.map { sample, bam, condition, starlog, finalout -> finalout }.mix(fc.log)
+  } else {
+    // transcriptome quantification: Salmon (low memory) -> summed gene-level counts
+    def tx     = file(params.transcript_fasta)
+    def sidx   = SALMON_INDEX(tx)
+    def quants = SALMON_QUANT(sidx, trimmed)
+    def gc     = SALMON_GENE_COUNTS(tx, quants.map { sample, dir -> dir }.collect(),
+                                    file("${projectDir}/bin/salmon_gene_counts.py"))
+    counts_ch  = gc.counts
+    aligner_qc = quants.map { sample, dir -> dir }
+  }
 
   def fastqc_files  = fq.flatMap { sample, zips, htmls -> (zips + htmls) }
   def cutadapt_logs = trimmed.map { sample, r1, r2, condition, cutlog -> cutlog }
-  def star_final    = aligned.map { sample, bam, condition, starlog, finalout -> finalout }
 
   def qc_files_ch = fastqc_files
     .mix(cutadapt_logs)
-    .mix(star_final)
-    .mix(fc.log)
+    .mix(aligner_qc)
     .collect()
 
   MULTIQC(qc_files_ch)
@@ -244,6 +302,6 @@ def fc = FEATURECOUNTS(gtf, bam_map, bam_files)
     def deseq_script = file("${projectDir}/bin/deseq2.R")
     if( !deseq_script.exists() ) error "DESeq2 script not found: ${deseq_script}"
 
-    DESEQ2(fc.counts, design, deseq_script)
+    DESEQ2(counts_ch, design, deseq_script)
   }
 }

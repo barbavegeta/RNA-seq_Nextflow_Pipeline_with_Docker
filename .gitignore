@@ -1,0 +1,7 @@
+work/
+.nextflow/
+.nextflow.log*
+data/
+results_airway/
+.Rhistory
+*Zone.Identifier

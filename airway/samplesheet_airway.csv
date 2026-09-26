@@ -1,0 +1,9 @@
+sample,fastq_1,fastq_2,condition
+N61311_control,data/airway/fastq/SRR1039508_1.fastq.gz,data/airway/fastq/SRR1039508_2.fastq.gz,control
+N61311_dex,data/airway/fastq/SRR1039509_1.fastq.gz,data/airway/fastq/SRR1039509_2.fastq.gz,dex
+N052611_control,data/airway/fastq/SRR1039512_1.fastq.gz,data/airway/fastq/SRR1039512_2.fastq.gz,control
+N052611_dex,data/airway/fastq/SRR1039513_1.fastq.gz,data/airway/fastq/SRR1039513_2.fastq.gz,dex
+N080611_control,data/airway/fastq/SRR1039516_1.fastq.gz,data/airway/fastq/SRR1039516_2.fastq.gz,control
+N080611_dex,data/airway/fastq/SRR1039517_1.fastq.gz,data/airway/fastq/SRR1039517_2.fastq.gz,dex
+N061011_control,data/airway/fastq/SRR1039520_1.fastq.gz,data/airway/fastq/SRR1039520_2.fastq.gz,control
+N061011_dex,data/airway/fastq/SRR1039521_1.fastq.gz,data/airway/fastq/SRR1039521_2.fastq.gz,dex
